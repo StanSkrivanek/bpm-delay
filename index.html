@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic Calculations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div class="title"><h1>BPM - DELAY</h1></div>
+    <div class="about"><p>Calculation of the delay timet for a note at given tempo in BPM.</p>
+
+        <p class="formula"> t = 1 / b</p>
+
+        <p>Therefore: 1 min / 96(bpm) = 60,000 ms / 96 = 625 ms</p>
+</div>
+<div id='bmpDelay' class="bpm_delay">
+    <input id="bpmNumber" class="bpmNumber" type="number" value="" placeholder="BPM">
+    <!-- <input id="calc" type="button" value="calculate"> -->
+    <h1 id="bmpDelayResult"></h1>
+</div>
+<ul id="container" class="container">
+        <li class="label"></li>
+        <li class="label">SIMPLE</li>
+        <li class="label">DOT</li>
+        <li class="label">TRIP</li>
+        <li class="label">1/2</li>
+        <li id="noteHalf" class="item">---</li>
+        <li id="noteHalfDot" class="item">---</li>
+        <li id="noteHalfTrip" class="item">---</li>
+        <li class="label">1/4</li>
+        <li id="noteQuarter" class="item">---</li>
+        <li id="noteQuarterDot" class="item">---</li>
+        <li id="noteQuarterTrip" class="item">---</li>
+        <li class="label">1/8</li>
+        <li id="noteEighth" class="item">---</li>
+        <li id="noteEighthDot" class="item">---</li>
+        <li id="noteEighthTrip" class="item">---</li>
+        <li class="label">1/16</li>
+        <li id="noteSixth" class="item">---</li>
+        <li id="noteSixthDot" class="item">---</li>
+        <li id="noteSixthTrip" class="item">---</li>
+        <li class="label">1/32</li>
+        <li id="note32" class="item">---</li>
+        <li id="note32Dot" class="item">---</li>
+        <li id="note32Trip" class="item">---</li>
+        <li class="label">1/64</li>
+        <li id="note64" class="item">---</li>
+        <li id="note64Dot" class="item">---</li>
+        <li id="note64Trip" class="item">---</li>
+</ul>
+<script src="multicalc.js"></script>
+</body>
+</html>
