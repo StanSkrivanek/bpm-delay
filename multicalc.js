@@ -73,17 +73,14 @@ usersInput.addEventListener("keyup",(event) => {
         let usersBpm = usersInput.value;
         // empty array delayTime to have in array ONLY a new results
         delayTime.splice(0);
+        // run calculation
+        calculateBpm(usersBpm);
+        // print results to page
+        print();
+        bpmDelay.innerHTML = `Results in 'ms' for ${usersBpm} BPM`;
         if(usersInput.value > 0 && usersInput.value < 60){
             bpmDelay.innerHTML = `Your BPM is ${usersBpm}, consider 60 BPM or higher`;
-            // run calculation
-            calculateBpm(usersBpm);
-            // print results to page
-            print();
-        }else{
-        bpmDelay.innerHTML = `Results in 'ms' for ${usersBpm} BPM`;
-        calculateBpm(usersBpm);
-        print();
-    }
+        }   
     }
     }
 });
